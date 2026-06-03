@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeAlpha Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Image Gallery</h1>
+
+    <button id="themeBtn">🌙 Dark Mode</button>
+
+    <div class="filters">
+        <button onclick="filterGallery('all')">All</button>
+        <button onclick="filterGallery('nature')">Nature</button>
+        <button onclick="filterGallery('city')">City</button>
+        <button onclick="filterGallery('animals')">Animals</button>
+        <button onclick="filterGallery('vehicles')">Vehicles</button>
+    </div>
+</header>
+
+<div class="gallery">
+
+    <!-- Nature -->
+    <div class="gallery-item nature"><img src="images/nature1.jpg" alt=""></div>
+    <div class="gallery-item nature"><img src="images/nature2.jpg" alt=""></div>
+    <div class="gallery-item nature"><img src="images/nature3.jpg" alt=""></div>
+    <div class="gallery-item nature"><img src="images/nature4.jpg" alt=""></div>
+
+    <!-- City -->
+    <div class="gallery-item city"><img src="images/city1.jpg" alt=""></div>
+    <div class="gallery-item city"><img src="images/city2.jpg" alt=""></div>
+    <div class="gallery-item city"><img src="images/city3.jpg" alt=""></div>
+    <div class="gallery-item city"><img src="images/city4.jpg" alt=""></div>
+
+    <!-- Animals -->
+    <div class="gallery-item animals"><img src="images/animal1.jpg" alt=""></div>
+    <div class="gallery-item animals"><img src="images/animal2.jpg" alt=""></div>
+    <div class="gallery-item animals"><img src="images/animal3.jpg" alt=""></div>
+    <div class="gallery-item animals"><img src="images/animal4.jpg" alt=""></div>
+
+    <!-- Vehicles -->
+    <div class="gallery-item vehicles"><img src="images/vehicle1.jpg" alt=""></div>
+    <div class="gallery-item vehicles"><img src="images/vehicle2.jpg" alt=""></div>
+    <div class="gallery-item vehicles"><img src="images/vehicle3.jpg" alt=""></div>
+    <div class="gallery-item vehicles"><img src="images/vehicle4.jpg" alt=""></div>
+
+</div>
+
+<div class="lightbox" id="lightbox">
+
+    <span class="close">&times;</span>
+
+    <span class="prev">&#10094;</span>
+
+    <img id="lightbox-img">
+
+    <span class="next">&#10095;</span>
+
+    <div id="counter"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
